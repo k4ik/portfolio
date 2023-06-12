@@ -11,6 +11,7 @@
     --text-color: #F2F1F3;
     --text-color2: #BCBAC4;
     --bg-input: #27223f;
+    --icon-color: #fff;
 }
 
 .light {
@@ -18,6 +19,7 @@
     --text-color: #242329;
     --text-color2: #6D6A7C;
     --bg-input: #6E57E0;
+    --icon-color: #000;
 }
 
 body {
@@ -25,6 +27,8 @@ body {
     color: var(--text-color2);
     font-family: 'Poppins', sans-serif;
 }
+
+/* Header */
 
 .header {
     display: flex;
@@ -40,12 +44,14 @@ body {
 
 .header-logo {
     font-size: 18px;
+    color: var(--text-color);
 }
 
 .header-nav {
     display: flex;
     align-items: center;
     gap: 30px;
+    color: var(--text-color);
 }
 
 .header-nav ul {
@@ -58,9 +64,22 @@ body {
 .header-nav a{
     color: var(--text-color);
     font-size: 18px;
+    text-decoration: none;
 }
 
-/* resume */
+.header-nav a:hover {
+    transition: .3s;
+    color: #6E57E0;
+}
+
+.header button {
+    background: transparent;
+    border: none;
+    font-size: 20px;
+    color: var(--icon-color);   
+}
+
+/* Resume */
 
 .home {
     display: flex;
@@ -70,21 +89,22 @@ body {
     padding-top: 80px;
 }
 
-.home .resume {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 620px;
-    gap: 70px;
-}
-
-.home aside {
+.home .home-social-links {
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 40px;
     font-size: 20px;
     color: #6E57E0;
+}
+
+
+.home .resume {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 620px;
+    gap: 70px;
 }
 
 .resume .resume-text h1{
@@ -120,6 +140,8 @@ body {
     border-radius: 50%;
 }
 
+/* About Me */
+
 .about-sec{
     padding: 80px 0;
 }
@@ -154,12 +176,12 @@ body {
     flex-direction: column;
 }
 
-.about-sec article .project {
+.about-sec article .about-project {
     display: flex;
     flex-direction: column;
 }
 
-.freelance {
+.about-bio {
     font-size: 20px;
     margin-bottom: 20px;
 }
@@ -191,6 +213,8 @@ body {
     font-size: 20px;
     margin: 60px auto;
 }
+
+/* Skills */
 
 .skills-section {
     padding: 80px 0;

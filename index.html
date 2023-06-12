@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="assets/styles/style.css">
 </head>
 <body>
+    <!-- Header -->
     <header class="header">
         <p class="header-logo">kaik</p>
         <nav class="header-nav">
@@ -18,12 +19,14 @@
                 <li><a href="#portfolio">Portfolio</a></li>
                 <li><a href="#contact">Contact me</a></li>
             </ul>
-            <ion-icon name="moon-outline"></ion-icon>
+            <button onclick="toggleMode()">
+                <ion-icon name="moon-outline"  class="chanceTheme"></ion-icon>
+            </button>
         </nav>
     </header>
-
+    <!-- Home -->
     <section class="home" id="home">
-        <aside>
+        <aside class="home-social-links">
             <ion-icon name="logo-linkedin"></ion-icon>
             <ion-icon name="logo-github"></ion-icon>
             <ion-icon name="document-text-outline"></ion-icon>
@@ -44,6 +47,7 @@
         </div>
     </section>
 
+    <!-- About Me -->
     <section class="about-sec" id="about">
         <div class="about">
             <h2>About Me</h2>
@@ -52,7 +56,7 @@
         <article>
             <img src="assets/images/foto.svg" alt="">
             <div>
-                <div class="freelance">
+                <div class="about-bio">
                     <p>freelance front-end developer.</p>
                 </div>
                 <div class="info">
@@ -61,7 +65,7 @@
                         <span>Years</span>
                         <span>experience</span>
                     </div>
-                    <div class="project">
+                    <div class="about-project">
                         <span>30+</span>
                         <span>Completed</span>
                         <span>projects</span>
@@ -75,7 +79,7 @@
 
         </article>
     </section>
-
+    <!-- Skills -->
     <section id="skills" class="skills-section">
         <div class="skills-about">
             <h2>Skills</h2>
@@ -102,7 +106,7 @@
             </div>
         </article>
     </section>
-
+    <!-- Projects -->
     <section id="portfolio" class="portfolio-sec">
         <div class="portfolio-about">
             <h2>Portfolio</h2>
@@ -147,7 +151,7 @@
             </div>
         </div>
     </section>
-
+    <!-- Contact -->
     <section id="contact" class="contact-section">
         <div class="contact-about">
             <h2>Contact Me</h2>
@@ -179,11 +183,12 @@
             </button>
         </form>
     </section>
-
+    <!-- Footer -->
     <footer class="footer">
         <p>&copy; k4ik, 2023</p>
     </footer>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="assets/js/main.js"></script>
 </body>
 </html>
