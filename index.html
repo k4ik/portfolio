@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kaik</title>
     <link rel="stylesheet" href="assets/styles/style.css">
+    <link rel="stylesheet" href="assets/styles/media.css">
 </head>
 <body>
     <!-- Header -->
@@ -19,27 +20,45 @@
                 <li><a href="#portfolio">Portfolio</a></li>
                 <li><a href="#contact">Contact me</a></li>
             </ul>
-            <button onclick="toggleMode()">
-                <ion-icon name="moon-outline"  class="chanceTheme"></ion-icon>
-            </button>
+            <div class="header-buttons">
+                <button class="nav-button" onclick="openNav()">
+                    <i class="fa-solid fa-bars fa-2x"></i>
+                </button>
+                <button onclick="toggleMode()">
+                    <ion-icon name="moon-outline"  class="chanceTheme"></ion-icon>
+                </button>
+            </div>
         </nav>
     </header>
     <!-- Home -->
+    <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="overlay-content">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#contact">Contact Me</a>
+        </div>
+    </div>
     <section class="home" id="home">
-        <aside class="home-social-links">
-            <ion-icon name="logo-linkedin"></ion-icon>
-            <ion-icon name="logo-github"></ion-icon>
-            <ion-icon name="document-text-outline"></ion-icon>
-        </aside>
+        
         <div class="resume">
+            
             <article class="resume-text">
                 <h1>Hi, I'm Kaik</h1>
                 <p class="front-end">Front-end Developer</p>
                 <p class="text">I'm a freelance front-end developer, I work with HTML5, CSS3, Javascript and React technologies</p>
+                
                 <button type="button">
                     <p>Contact me</p>
                     <i class="ph-fill ph-paper-plane-right"></i>                
                 </button>
+                <div class="home-social-links">
+                    <ion-icon name="logo-linkedin"></ion-icon>
+                    <ion-icon name="logo-github"></ion-icon>
+                    <ion-icon name="document-text-outline"></ion-icon>
+                </div>
             </article>
             <article>
                 <img src="assets/images/foto.svg" alt="" class="foto">

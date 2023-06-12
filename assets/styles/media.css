@@ -1,0 +1,97 @@
+@media screen and (max-width: 1000px) {
+    /* Home */
+    .resume .resume-text .text {
+        width: 400px;
+        font-size: 18px;
+    }
+
+    .resume .foto {
+        width: 250px;
+    }
+
+    /* Projects */
+    .portfolio-projects {
+        grid-template-columns: auto;
+    }
+}
+
+@media screen and (max-width: 810px){
+    .resume .resume-text .text {
+        width: 300px;
+        font-size: 18px;
+    }
+
+    .resume .foto {
+        width: 250px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .home {
+        padding: 40px 0 40px 0;
+    }
+
+    .header-nav ul{
+        display: none;
+    }
+
+    .nav-button {
+        display: flex;
+    }
+
+    .home .resume-text {
+        justify-content: center;
+    }
+
+    .home .foto {
+        display: none;
+    }
+    
+    .about-sec article {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .experience-bar {
+        width: 300px;
+    }
+
+    .portfolio-projects .project-div {
+        width: 400px;
+    }
+
+    .contact-section form div {
+        width: 400px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .home {
+        padding: 40px 0 40px 0;
+    }
+
+    .resume .resume-text .front-end {
+        font-size: 25px;
+    }
+
+    .home .resume-text {
+        margin: 0;
+        gap: 0;
+    }
+
+    .home .resume {
+        gap: 0;
+    }
+    .experience-bar {
+        width: 200px;
+        font-size: 14px;
+    }
+
+    .portfolio-projects .project-div {
+        width: 300px;
+    }
+
+    .contact-section form div {
+        width: 300px;
+    }
+}
