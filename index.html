@@ -21,18 +21,18 @@
         <p class="header-logo">kaik</p>
         <nav class="header-nav">
             <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#contact">Contact me</a></li>
+                <li><a href="#home" tabindex="1">Home</a></li>
+                <li><a href="#about" tabindex="2">About</a></li>
+                <li><a href="#skills" tabindex="3">Skills</a></li>
+                <li><a href="#portfolio" tabindex="4">Portfolio</a></li>
+                <li><a href="#contact" tabindex="5">Contact me</a></li>
             </ul>
             <div class="header-buttons">
                 <button onclick="toggleMode()">
-                    <ion-icon name="moon-outline"  class="chanceTheme"></ion-icon>
+                    <ion-icon name="moon-outline"  class="chanceTheme" tabindex="6"></ion-icon>
                 </button>
                 <button class="nav-button" onclick="openNav()">
-                    <i class="fa-solid fa-bars fa-2x"></i>
+                    <i class="fa-solid fa-bars fa-2x" tabindex="7"></i>
                 </button>
             </div>
         </nav>
@@ -48,189 +48,184 @@
         </div>
     </div>
     <!-- Home -->
-    <section class="home" id="home">
+    <main>
+        <section class="home" id="home">
         
-        <div class="resume">
-            
-            <article class="resume-text">
-                <h1>Hi, I'm Kaik</h1>
-                <p class="front-end">Front-end Developer</p>
-                <p class="text">I'm a freelance front-end developer, I work with HTML5, CSS3, Javascript and React technologies</p>
-                
-                <button type="button">
-                    <a href="#contact">
-                        <p>Contact me</p>
-                    </a>
-                    <i class="ph-fill ph-paper-plane-right"></i>                
-                </button>
-                <div class="home-social-links">
-                    <a href="https://linkedin.com/in/kaik-eduardo/" target="_blank">
-                        <ion-icon name="logo-linkedin"></ion-icon>
-                    </a>
-                    <a href="https://github.com/k4ik/" target="_blank">
-                        <ion-icon name="logo-github"></ion-icon>
-                    </a>
-                    <a href="https://linkedin.com/in/kaik-eduardo/" target="_blank">
-                        <ion-icon name="document-text-outline"></ion-icon>
-                    </a>
-                </div>
-            </article>
+            <div class="resume">
+        
+                <article class="resume-text">
+                    <h1>Hi, I'm Kaik</h1>
+                    <p class="front-end">Front-end Developer</p>
+                    <p class="text">I'm a freelance front-end developer, I work with HTML5, CSS3, Javascript and React technologies</p>
+        
+                    <button type="button"  tabindex="8">
+                        <a href="#contact">
+                            <p>Contact me</p>
+                        </a>
+                        <i class="ph-fill ph-paper-plane-right"></i>
+                    </button>
+                    <div class="home-social-links">
+                        <a href="https://linkedin.com/in/kaik-eduardo/" target="_blank" tabindex="9">
+                            <ion-icon name="logo-linkedin"></ion-icon>
+                        </a>
+                        <a href="https://github.com/k4ik/" target="_blank" tabindex="10">
+                            <ion-icon name="logo-github"></ion-icon>
+                        </a>
+                        <a href="https://linkedin.com/in/kaik-eduardo/" target="_blank" tabindex="11">
+                            <ion-icon name="document-text-outline"></ion-icon>
+                        </a>
+                    </div>
+                </article>
+                <article>
+                    <img src="assets/images/foto.svg" alt="" class="foto">
+                </article>
+            </div>
+        </section>
+        <!-- About Me -->
+        <section class="about-sec" id="about">
+            <div class="about">
+                <h2>About Me</h2>
+                <p>My Introduction</p>
+            </div>
             <article>
-                <img src="assets/images/foto.svg" alt="" class="foto">
+                <img src="assets/images/foto.svg" alt="">
+                <div>
+                    <div class="about-bio">
+                        <p>freelance front-end developer.</p>
+                    </div>
+                    <div class="info">
+                        <div class="experience">
+                            <span>02+</span>
+                            <span>Years</span>
+                            <span>experience</span>
+                        </div>
+                        <div class="about-project">
+                            <span>30+</span>
+                            <span>Completed</span>
+                            <span>projects</span>
+                        </div>
+                    </div>
+                    <button type="button" tabindex="12">
+                        <a href="https://linkedin.com/in/kaik-eduardo/" target="_blank" >
+                            <p>Download CV</p>
+                        </a>
+                        <ion-icon name="download-outline"></ion-icon>
+                    </button>
+                </div>
             </article>
-        </div>
-    </section>
-
-    <!-- About Me -->
-    <section class="about-sec" id="about">
-        <div class="about">
-            <h2>About Me</h2>
-            <p>My Introduction</p>
-        </div>
-        <article>
-            <img src="assets/images/foto.svg" alt="">
-            <div>
-                <div class="about-bio">
-                    <p>freelance front-end developer.</p>
-                </div>
-                <div class="info">
-                    <div class="experience">
-                        <span>02+</span>
-                        <span>Years</span>
-                        <span>experience</span>
+        </section>
+        <!-- Skills -->
+        <section id="skills" class="skills-section">
+            <div class="skills-about">
+                <h2>Skills</h2>
+                <p>My Technical Skills</p>
+            </div>
+            <article>
+                <div class="experiences">
+                    <div class="frontend-experience">
+                        <ion-icon name="logo-html5"  class="language-icons html"></ion-icon>
+                        <div class="experience-bar"><span>2 years of experience</span></div>
                     </div>
-                    <div class="about-project">
-                        <span>30+</span>
-                        <span>Completed</span>
-                        <span>projects</span>
+                    <div class="frontend-experience">
+                        <ion-icon name="logo-css3" class="language-icons css"></ion-icon>
+                        <div class="experience-bar"><span>2 years of experience</span></div>
+                    </div>
+                    <div class="frontend-experience">
+                        <ion-icon name="logo-javascript" class="language-icons js"></ion-icon>
+                        <div class="experience-bar"><span>4 months of experience</span></div>
+                    </div>
+                    <div class="frontend-experience">
+                        <ion-icon name="logo-react" class="language-icons react"></ion-icon>
+                        <div class="experience-bar"><span>1 months of experience</span></div>
                     </div>
                 </div>
-                <button type="button">
-                    <a href="https://linkedin.com/in/kaik-eduardo/" target="_blank">
-                        <p>Download CV</p>
-                    </a>
-                    <ion-icon name="download-outline"></ion-icon>
+            </article>
+        </section>
+        <!-- Projects -->
+        <section id="portfolio" class="portfolio-sec">
+            <div class="portfolio-about">
+                <h2>Portfolio</h2>
+                <p>Most recent work</p>
+            </div>
+            <div class="portfolio-projects">
+                <div class="project-div">
+                    <img src="assets/images/healthx.png" alt="">
+                    <p>Healthx</p>
+                    <div class="div-buttons">
+                        <button type="button">
+                            <a href="https://github.com/k4ik/healthx" tabindex="13"  target="_blank">
+                                <ion-icon name="logo-github"></ion-icon>
+                            </a>
+                        </button>
+                        <button type="button">
+                            <a href="https://kaik.github.io/healthx" tabindex="14" target="_blank">
+                                <ion-icon name="cloud-outline"></ion-icon>
+                            </a>
+                        </button>
+                    </div>
+                </div>
+                <div class="project-div">
+                    <img src="assets/images/travel-website.png" alt="">
+                    <p>Travel Website</p>
+                    <div class="div-buttons">
+                        <button type="button">
+                            <a href="https://kaik.github.io/travel-website" tabindex="15" target="_blank">
+                                <ion-icon name="logo-github"></ion-icon>
+                            </a>
+                        </button>
+                        <button type="button">
+                            <a href="https://github.com/k4ik/travel-website" tabindex="16" target="_blank">
+                                <ion-icon name="cloud-outline"></ion-icon>
+                            </a>
+                        </button>
+                    </div>
+                </div>
+                <div class="project-div">
+                    <img src="assets/images/busca-cep.png" alt="">
+                    <p>Busca CEP</p>
+                    <div class="div-buttons">
+                        <button type="button">
+                            <a href="https://github.com/k4ik/busca-cep" tabindex="17" target="_blank">
+                                <ion-icon name="logo-github"></ion-icon>
+                            </a>
+                        </button>
+                        <button type="button">
+                            <a href="https://cep-pesquisar.vercel.app/" tabindex="18" target="_blank">
+                                <ion-icon name="cloud-outline"></ion-icon>
+                            </a>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Contact -->
+        <section id="contact" class="contact-section">
+            <div class="contact-about">
+                <h2>Contact Me</h2>
+                <p>Get in touch</p>
+            </div>
+            <form action="https://formsubmit.co/contato.kaikleal@gmail.com" method="POST">
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_next" value="https://kaikl.vercel.app/index.html">
+                <div>
+                    <label for="name">Name</label>
+                    <input type="text" name="name" id="name" placeholder="Your Name" tabindex="19">
+                </div>
+                <div>
+                    <label for="email">Email</label>
+                    <input type="email" name="name" id="email" placeholder="Your Email" tabindex="20">
+                </div>
+                <div>
+                    <label for="message">Your Message</label>
+                    <input type="text" id="message" name="message" tabindex="21">
+                </div>
+                <button type="submit" tabindex="22">
+                    <p>Send message</p>
+                    <i class="ph-fill ph-paper-plane-right"></i>
                 </button>
-            </div>
-
-        </article>
-    </section>
-    <!-- Skills -->
-    <section id="skills" class="skills-section">
-        <div class="skills-about">
-            <h2>Skills</h2>
-            <p>My Technical Skills</p>
-        </div>
-        <article>
-            <div class="experiences">
-                <div class="frontend-experience">
-                    <ion-icon name="logo-html5"  class="language-icons html"></ion-icon>
-                    <div class="experience-bar"><span>2 years of experience</span></div>
-                </div>
-                <div class="frontend-experience">
-                    <ion-icon name="logo-css3" class="language-icons css"></ion-icon>
-                    <div class="experience-bar"><span>2 years of experience</span></div>
-                </div>
-                <div class="frontend-experience">
-                    <ion-icon name="logo-javascript" class="language-icons js"></ion-icon>
-                    <div class="experience-bar"><span>4 months of experience</span></div>
-                </div>
-                <div class="frontend-experience">
-                    <ion-icon name="logo-react" class="language-icons react"></ion-icon>
-                    <div class="experience-bar"><span>1 months of experience</span></div>
-                </div>
-            </div>
-        </article>
-    </section>
-    <!-- Projects -->
-    <section id="portfolio" class="portfolio-sec">
-        <div class="portfolio-about">
-            <h2>Portfolio</h2>
-            <p>Most recent work</p>
-        </div>
-        <div class="portfolio-projects">
-            <div class="project-div">
-                <img src="assets/images/healthx.png" alt="">
-                <p>Healthx</p>
-                <div class="div-buttons">
-                    <button type="button">
-                        <a href="https://github.com/k4ik/healthx">
-                            <ion-icon name="logo-github"></ion-icon>
-                        </a>
-                    </button>
-                    <button type="button">
-                        <a href="https://kaik.github.io/healthx">
-                            <ion-icon name="cloud-outline"></ion-icon>
-                        </a>
-                    </button>
-                </div>
-            </div>
-            <div class="project-div">
-                <img src="assets/images/travel-website.png" alt="">
-                <p>Travel Website</p>
-                <div class="div-buttons">
-                    <button type="button">
-                        <a href="https://kaik.github.io/travel-website">
-                            <ion-icon name="logo-github"></ion-icon>
-                        </a>
-                    </button>
-                    <button type="button">
-                        <a href="https://github.com/k4ik/healthx">
-                            <ion-icon name="cloud-outline"></ion-icon>
-                        </a>
-                    </button>
-                </div>
-            </div>
-            <div class="project-div">
-                <img src="assets/images/busca-cep.png" alt="">
-                <p>Busca CEP</p>
-                <div class="div-buttons">
-                    <button type="button">
-                        <a href="https://github.com/k4ik/busca-cep">
-                            <ion-icon name="logo-github"></ion-icon>
-                        </a>
-                    </button>
-                    <button type="button">
-                        <a href="https://cep-pesquisar.vercel.app/">
-                            <ion-icon name="cloud-outline"></ion-icon>
-                        </a>
-                    </button>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Contact -->
-    <section id="contact" class="contact-section">
-        <div class="contact-about">
-            <h2>Contact Me</h2>
-            <p>Get in touch</p>
-        </div>
-
-        <form action="https://formsubmit.co/contato.kaikleal@gmail.com" method="POST">
-            <input type="hidden" name="_captcha" value="false">
-            <input type="hidden" name="_next" value="https://kaikl.vercel.app/index.html">
-
-            <div>
-                <label for="name">Name</label>
-                <input type="text" name="name" id="name" placeholder="Your Name">
-            </div>
-
-            <div>
-                <label for="email">Email</label>
-                <input type="email" name="name" id="email" placeholder="Your Email">
-            </div>
-
-            <div>
-                <label for="message">Your Message</label>
-                <input type="text" id="message" name="message">
-            </div>
-
-            <button type="submit">
-                <p>Send message</p>
-                <i class="ph-fill ph-paper-plane-right"></i> 
-            </button>
-        </form>
-    </section>
+            </form>
+        </section>
+    </main>
     <!-- Footer -->
     <footer class="footer">
         <p>&copy; <a href="https://github.com/k4ik/" target="_blank">k4ik</a>, 2023</p>
