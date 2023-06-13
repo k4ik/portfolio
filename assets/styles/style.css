@@ -19,10 +19,9 @@
     --bg-color: #FBFBFE;
     --text-color: #242329;
     --text-color2: #6D6A7C;
-    --bg-input: #6E57E0;
+    --bg-input: #615d6a;
     --icon-color: #000;
     --color-btn: #000;
-
 }
 
 html {
@@ -88,6 +87,10 @@ body {
 
 .chanceTheme {
     font-size: 30px;
+}
+
+.chanceTheme:hover {
+    color: #6E57E0;
 }
 
 .header-buttons {
@@ -177,6 +180,7 @@ body {
 .home .home-social-links a {
     color: #6E57E0;
     font-size: 30px;
+    text-decoration: none;
 }
 
 .home .resume {
@@ -217,6 +221,7 @@ body {
 
 .resume .resume-text button a {
     color: #fff;
+    text-decoration: none;
 }
 
 .resume .foto {
@@ -304,6 +309,7 @@ body {
 
 .about-sec article button a {
     color: #fff;
+    text-decoration: none;
 }
 
 /* Skills */
@@ -361,6 +367,24 @@ body {
     align-items: center;
 }
 
+.html:hover {
+    transition: .2s;
+    color: #E54C21;
+}
+
+.css:hover {
+    transition: .2s;
+    color: #006BC0;
+}
+.js:hover {
+    transition: .2s;
+    color: #F7E018;
+}
+.react:hover {
+    transition: .2s;
+    color: #7BDEFD;
+}
+
 .portfolio-sec {
     padding: 40px;
 }
@@ -406,6 +430,7 @@ body {
 }
 .portfolio-projects .project-div button a {
     color: var(--text-color);
+    text-decoration: none;
 }
 
 
@@ -493,4 +518,14 @@ body {
     text-align: center;
     color: var(--text-color);
     font-size: 14px;
+}
+
+.footer a {
+    color: var(--text-color);
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    color: var(--text-color2);
 }
