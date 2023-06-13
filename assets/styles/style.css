@@ -12,6 +12,7 @@
     --text-color2: #BCBAC4;
     --bg-input: #27223f;
     --icon-color: #fff;
+    --color-btn: #fff;
 }
 
 .light {
@@ -20,6 +21,8 @@
     --text-color2: #6D6A7C;
     --bg-input: #6E57E0;
     --icon-color: #000;
+    --color-btn: #000;
+
 }
 
 body {
@@ -79,6 +82,10 @@ body {
     color: var(--icon-color);   
 }
 
+.chanceTheme {
+    font-size: 28px;
+}
+
 .header-buttons {
     display: flex;
     align-items: center;
@@ -93,8 +100,8 @@ body {
 }
 
 .nav-button i {
-    color: var(--bg-input);
-    font-size: 20px;
+    color: var(--color-btn);
+    font-size: 28px;
 }
 
 .overlay {
@@ -122,7 +129,7 @@ body {
     text-decoration: none;
     color: #818181;
     display: block;
-    font-size: 34px;
+    font-size: 24px;
     transition: 0.3s;
 }
 
@@ -168,7 +175,7 @@ body {
 
 .home .resume {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     height: 620px;
     gap: 20px;
@@ -211,7 +218,7 @@ body {
 /* About Me */
 
 .about-sec{
-    padding: 80px 0;
+    padding: 40px 0;
 }
 
 .about-sec .about {
@@ -285,7 +292,7 @@ body {
 /* Skills */
 
 .skills-section {
-    padding: 80px 0;
+    padding: 40px 0;
 }
 
 .skills-section .experiences {
@@ -335,7 +342,7 @@ body {
 }
 
 .portfolio-sec {
-    padding: 80px;
+    padding: 40px;
 }
 
 .portfolio-about {
@@ -385,7 +392,7 @@ body {
 }
 
 .contact-section {
-    padding: 80px 0;
+    padding: 40px 0;
 }
 
 .contact-about {

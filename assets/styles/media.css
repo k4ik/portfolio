@@ -82,11 +82,40 @@
     .home .resume {
         gap: 0;
     }
+
+    .about-sec .about h2 {
+        font-size: 30px;
+        color: var(--text-color);
+    }
+    
+    .about-sec .about p {
+        font-size: 16px;
+    }
+
+    .skills-about h2 {
+        font-size: 30px;
+        color: var(--text-color);
+    }
+    
+    .skills-about p {
+        font-size: 16px;
+    }
+    
     .experience-bar {
         width: 200px;
         font-size: 14px;
     }
 
+    .portfolio-about h2 {
+        font-size: 30px;
+        color: var(--text-color);
+    }
+    
+    .portfolio-about p {
+        font-size: 16px;
+    }
+    
+   
     .portfolio-projects .project-div {
         width: 300px;
     }
@@ -94,4 +123,14 @@
     .contact-section form div {
         width: 300px;
     }
+
+    .contact-about h2{
+        font-size: 30px;
+        color: var(--text-color);
+    }
+    
+    .contact-about p {
+        font-size: 16px;
+    }
+
 }
