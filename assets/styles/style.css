@@ -168,10 +168,12 @@ body {
 .home .home-social-links {
     display: flex;
     gap: 40px;
-    font-size: 30px;
-    color: #6E57E0;
 }
 
+.home .home-social-links a {
+    color: #6E57E0;
+    font-size: 30px;
+}
 
 .home .resume {
     display: flex;
@@ -207,6 +209,10 @@ body {
     margin: 30px 0;
     border: none;
     border-radius: 8px;
+}
+
+.resume .resume-text button a {
+    color: #fff;
 }
 
 .resume .foto {
@@ -284,9 +290,13 @@ body {
     border: none;
     border-radius: 8px;
     padding: 10px 20px;    
-    color: #fff;
     font-size: 20px;
+    color: #fff;
     margin: 60px auto;
+}
+
+.about-sec article button a {
+    color: #fff;
 }
 
 /* Skills */
@@ -384,6 +394,10 @@ body {
     font-size: 25px;
     color: var(--text-color);
 }
+.portfolio-projects .project-div button a {
+    color: var(--text-color);
+}
+
 
 .div-buttons {
     display: flex;
