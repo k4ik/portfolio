@@ -266,7 +266,7 @@ body {
 }
 
 .about-sec img {
-    width: 250px;
+    width: 300px;
 }
 
 .about-sec article {
@@ -287,8 +287,9 @@ body {
 }
 
 .about-bio {
-    font-size: 20px;
-    margin-bottom: 20px;
+    font-size: 14px;
+    margin-bottom: 10px;
+    width: 300px;
 }
 
 .about-sec article .info {
@@ -302,7 +303,7 @@ body {
 }
 
 .about-sec article .info span:nth-child(2), .about-sec article .info span:nth-child(2){
-    font-size: 14px;
+    font-size: 12px;
 }
 
 .about-sec article button {
@@ -316,7 +317,7 @@ body {
     padding: 10px 20px;    
     font-size: 20px;
     color: #fff;
-    margin: 60px auto;
+    margin: 30px auto;
 }
 
 .about-sec article button:hover {
