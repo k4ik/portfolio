@@ -16,6 +16,12 @@
     <link rel="stylesheet" href="assets/styles/media.css">
 </head>
 <body>
+    <div class="up-btn">
+        <button id="scrollToTopButton" onclick="scrollToTop()">
+            <i class="ph-fill ph-arrow-up"></i>
+        </button>
+
+    </div>
     <!-- Header -->
     <header class="header">
         <p class="header-logo">kaik</p>
@@ -40,11 +46,11 @@
     <div id="myNav" class="overlay">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         <div class="overlay-content">
-            <a href="#home">Home</a>
-            <a href="#about">About</a>
-            <a href="#skills">Skills</a>
-            <a href="#portfolio">Portfolio</a>
-            <a href="#contact">Contact Me</a>
+            <a href="#home" onclick="closeNav()">Home</a>
+            <a href="#about" onclick="closeNav()">About</a>
+            <a href="#skills" onclick="closeNav()">Skills</a>
+            <a href="#portfolio" onclick="closeNav()">Portfolio</a>
+            <a href="#contact" onclick="closeNav()">Contact Me</a>
         </div>
     </div>
     <!-- Home -->
@@ -56,7 +62,7 @@
                 <article class="resume-text">
                     <h1>Hi, I'm Kaik</h1>
                     <p class="front-end">Front-end Developer</p>
-                    <p class="text">I'm a freelance front-end developer, I work with HTML5, CSS3, Javascript and React technologies</p>
+                    <p class="text">I'm a freelance front-end developer, I work with HTML5, CSS3, Javascript and React technologies.</p>
         
                     <button type="button"  tabindex="8">
                         <a href="#contact">
